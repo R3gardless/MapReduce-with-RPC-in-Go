@@ -46,7 +46,6 @@ func doMap(
 		reduceTaskNumber := ihash(kv.Key) % uint32(nReduce)
 		err := encoders[reduceTaskNumber].Encode(&kv)
 		checkError(err)
-
 	}
 }
 

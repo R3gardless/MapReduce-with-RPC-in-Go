@@ -61,6 +61,5 @@ func doReduce(
 		result := reduceF(key, kvMap[key])
 		err := enc.Encode(KeyValue{Key: key, Value: result})
 		checkError(err)
-
 	}
 }
